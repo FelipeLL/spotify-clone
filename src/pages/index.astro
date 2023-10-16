@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PlayListItemCard from '../components/PlayListItemCard.astro';
+import Greeting from '../components/Greeting.svelte';
 
 import { playlists } from '../lib/data';
 
@@ -14,7 +15,8 @@ import { playlists } from '../lib/data';
     <!-- PageHeader -->
 
     <div class="relative px-6 pt-10 z-10">
-        <h2 class="text-4xl">Buenos días</h2>
+        
+        <Greeting />
         
         <div class="flex flex-wrap mt-6 gap-4">
         {
